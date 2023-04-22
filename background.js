@@ -6,7 +6,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
       if (tabs.length > 10) {
         chrome.scripting.executeScript({
           target: {tabId: tabId},
-          func: () => alert('TOO MANY TABS!!!')
+          func: () => alert('Will says, "TOO MANY TABS!!!"')
         });
       }
     })
